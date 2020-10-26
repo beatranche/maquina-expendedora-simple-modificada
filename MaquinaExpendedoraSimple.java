@@ -51,7 +51,14 @@
     public void introducirDinero(int cantidadIntroducida) {
         balanceClienteActual = balanceClienteActual + cantidadIntroducida;
     }
-
+    /**
+     * Total dinero acumulado desde su puesta en funcionamiento
+     */
+    public int gettotalDineroAcumulado(){
+        int totalAcumulado = 0;
+        totalAcumulado += balanceClienteActual;
+        return totalAcumulado;
+    }
     /**
      * Imprime un billete para el cliente actual
      */
@@ -67,6 +74,6 @@
         // Actualiza el total de dinero acumulado en la maquina
         totalDineroAcumulado = totalDineroAcumulado + balanceClienteActual;
         // Queda preparada para el proximo cliente
-        balanceClienteActual = 0;
+        
     }
 }
