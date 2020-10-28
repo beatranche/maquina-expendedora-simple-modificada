@@ -70,6 +70,12 @@
         precioBillete = precioBillete - reduccionPrecio;
     }
     /**
+     * Permite vaciar el deposito de la máquina
+     */
+    public void vaciarDepositoDinero(){
+        totalDineroAcumulado -= totalDineroAcumulado; 
+    }
+    /**
      * Imprime un billete para el cliente actual
      */
     public void imprimirBillete() {
