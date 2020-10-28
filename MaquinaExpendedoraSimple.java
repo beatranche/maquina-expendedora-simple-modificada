@@ -58,6 +58,12 @@
         return totalDineroAcumulado;
     }
     /**
+     * Permite cambiar el precio del billete
+     */
+    public void cambioPrecio(int nuevoPrecio){
+        precioBillete = nuevoPrecio;
+    }
+    /**
      * Imprime un billete para el cliente actual
      */
     public void imprimirBillete() {
