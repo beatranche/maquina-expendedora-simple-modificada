@@ -64,6 +64,12 @@
         precioBillete = nuevoPrecio;
     }
     /**
+     * Permite reducir el precio del billete
+     */
+    public void reducirPrecioBillete (int reduccionPrecio){
+        precioBillete = precioBillete - reduccionPrecio;
+    }
+    /**
      * Imprime un billete para el cliente actual
      */
     public void imprimirBillete() {
